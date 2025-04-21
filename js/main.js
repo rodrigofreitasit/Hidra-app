@@ -1,11 +1,13 @@
 
 import { salvarRegistro, obterTotaisDoDia } from './modules/storage.js';
 import { atualizarResumo } from './modules/ui.js';
+import { exibirGrafico } from './modules/chart.js';
 
 document.addEventListener("DOMContentLoaded", () => {
     if (location.pathname.includes("index")) {
         const totais = obterTotaisDoDia();
         atualizarResumo(totais.agua, totais.xixi);
+        exibirGrafico(totais.agua, totais.xixi);
     }
 
     if (location.pathname.includes("agua")) {
