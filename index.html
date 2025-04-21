@@ -10,6 +10,7 @@
 <body>
     <h1>Resumo Diário</h1>
     <div id="resumo">
+        <canvas id="grafico" height="200"></canvas>
         <p>Água ingerida: <span id="aguaTotal">0</span> ml</p>
         <p>Xixi expelido: <span id="xixiTotal">0</span> ml</p>
         <p id="comparacao"></p>
@@ -18,6 +19,7 @@
         <a href="agua.html">Registrar Água</a>
         <a href="xixi.html">Registrar Xixi</a>
     </nav>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script type="module" src="js/main.js"></script>
 </body>
 </html>
